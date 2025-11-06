@@ -189,7 +189,8 @@ const CalendarPage = () => {
                         {bookings.slice(-2).reverse().map((booking) => {
                             const createdDate = new Date(booking.created_at);
                             const now = new Date();
-                            const diffMs = now - createdDate;
+                            const diffMs = Math.max(0, now - createdDate);
+
                             const diffMins = Math.floor(diffMs / 60000);
                             const timeAgo = diffMins < 60 ? `${diffMins} min ago` : diffMins < 1440 ? `${Math.floor(diffMins / 60)} hours ago` : `${Math.floor(diffMins / 1440)} days ago`;
                             return (
