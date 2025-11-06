@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --spacing-xs: .25rem;
+  --spacing-sm: .5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+}
+
+@theme {
+  --color-pri: #FF8A65;
+  --color-sec: #FFD7C4;
+  --color-thd:  #FFCBA4;;
+}
